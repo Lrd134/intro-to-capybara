@@ -5,7 +5,7 @@ class Application < Sinatra::Base
     erb :index
   end
   post '/greet' do
-   
+    user = params["user_name"]
     redirect :greet
   end
   get '/greet' do
